@@ -1,0 +1,27 @@
+<h1>{{movie.title}}</h1>
+<img src="{{movie.image}}" alt="">
+<h2>
+  Director: {{movie.director}}
+</h2>
+<p>
+    Stars:
+</p>
+{{#each movie.stars}}
+<ul>
+    <li>{{this.[]}}</li>
+</ul>
+{{/each}}
+<p>
+    Description
+</p>
+<p>
+    {{movie.description}}
+</p>
+<p>
+    Show Times
+</p>
+{{#each movie.showtimes}}
+<ul>
+    <li>{{this.[]}}</li>
+</ul>
+{{/each}}

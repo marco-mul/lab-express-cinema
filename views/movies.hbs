@@ -1,0 +1,12 @@
+<h1>Available Movies 🚀</h1>
+<div class="movies-container">
+    {{#each movies}}
+        <div class="movie-container">
+            <img src="{{this.image}}" alt="">
+            <p>
+                {{this.title}}
+            </p>
+            <p><a href="/movie/{{this._id}}">See More Info</a></p>
+        </div>
+    {{/each}}
+</div>
